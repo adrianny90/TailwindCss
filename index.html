@@ -1,19 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="<https://cdn.tailwindcss.com>"></script>
-  <script>
-    tailwind.config = {
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="relative font-sans">
+    <nav class="fixed top-0 w-full bg-white shadow-md z-10">
+      <ul class="flex justify-center space-x-6 p-4">
+        <li>
+          <a href="#home" class="text-gray-700 hover:text-blue-500">Home</a>
+        </li>
+        <li>
+          <a href="#plants" class="text-gray-700 hover:text-blue-500">Plants</a>
+        </li>
+        <li>
+          <a href="#about" class="text-gray-700 hover:text-blue-500">About</a>
+        </li>
+        <li>
+          <a href="#contact" class="text-gray-700 hover:text-blue-500"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div
+      class="fixed left-4 top-1/2 transform -translate-y-1/2 flex flex-col space-y-3"
+    >
+      <div
+        class="dot w-3 h-3 rounded-full bg-gray-400"
+        data-target="home"
+      ></div>
+      <div
+        class="dot w-3 h-3 rounded-full bg-gray-400"
+        data-target="plants"
+      ></div>
+      <div
+        class="dot w-3 h-3 rounded-full bg-gray-400"
+        data-target="about"
+      ></div>
+      <div
+        class="dot w-3 h-3 rounded-full bg-gray-400"
+        data-target="contact"
+      ></div>
+    </div>
+
+    <section
+      id="home"
+      class="h-screen flex items-center justify-center bg-blue-100"
+    >
+      Home Section
+    </section>
+    <section
+      id="plants"
+      class="h-screen flex items-center justify-center bg-yellow-100"
+    >
+      Plants Section
+    </section>
+    <section
+      id="about"
+      class="h-screen flex items-center justify-center bg-green-100"
+    >
+      About Section
+    </section>
+    <section
+      id="contact"
+      class="h-screen flex items-center justify-center bg-red-100"
+    >
+      Contact Section
+    </section>
+    <script>
+      tailwind.config = {
         theme: {
-          extend: {}
+          extend: {},
         },
       };
-  </script>
-</head>
-<body>
-    
-</body>
+    </script>
+  </body>
 </html>
