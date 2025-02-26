@@ -14,74 +14,146 @@
   <body class="relative font-sans">
     <main>
       <!-- Navbar with links to sections -->
-      <nav class="fixed top-0 w-full bg-white shadow-md z-10">
-        <ul class="flex justify-center space-x-6 p-4">
-          <li>
-            <a href="#home" class="text-gray-700 hover:text-green-700">Home</a>
-          </li>
-          <li>
-            <a href="#plants" class="text-gray-700 hover:text-green-700"
-              >Plants</a
-            >
-          </li>
-          <li>
-            <a href="#about" class="text-gray-700 hover:text-green-700"
-              >About</a
-            >
-          </li>
-          <li>
-            <a href="#contact" class="text-gray-700 hover:text-green-700"
-              >Contact</a
-            >
-          </li>
-        </ul>
+      <nav class="fixed top-0 w-full bg-[#87aa7d] shadow-md z-50">
+        <div class="flex justify-center">
+          <ul class="flex justify-center h-10 font-bold text-[#203325]">
+            <li class="self-center">
+              <a
+                href="#home"
+                class="p-4 hover:p-4 hover:pb-4 hover:bg-[#e4ecdf] hover:shadow-md"
+                >Home</a
+              >
+            </li>
+            <li class="self-center">
+              <a
+                href="#plants"
+                class="p-4 hover:p-4 hover:pb-4 hover:bg-[#e4ecdf] hover:shadow-md"
+                >Plants</a
+              >
+            </li>
+            <li class="self-center">
+              <a
+                href="#about"
+                class="p-4 hover:p-4 hover:pb-4 hover:bg-[#e4ecdf] hover:shadow-md"
+                >About</a
+              >
+            </li>
+            <li class="self-center">
+              <a
+                href="#contact"
+                class="p-4 hover:p-4 hover:pb-4 hover:bg-[#e4ecdf] hover:shadow-md"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
       <!-- Dot carousel reactive to sections-->
       <div
-        class="fixed left-4 top-1/2 transform -translate-y-1/2 flex flex-col space-y-3"
+        class="z-50 flex flex-col fixed rounded-full left-5 top-1/2 transform -translate-y-1/2 space-y-4 ;"
       >
         <a
           href="#home"
-          class="dot w-3 h-3 rounded-full bg-gray-400 peer-checked:bg-green-700 transition"
+          class="dot w-3 h-3 border-2 border-[#203325] rounded-full transition"
         ></a>
         <a
           href="#plants"
-          class="dot w-3 h-3 rounded-full bg-gray-400 peer-checked:bg-green-700 transition"
+          class="dot w-3 h-3 border-2 border-[#203325] rounded-full transition"
         ></a>
         <a
           href="#about"
-          class="dot w-3 h-3 rounded-full bg-gray-400 peer-checked:bg-green-700 transition"
+          class="dot w-3 h-3 border-2 border-[#203325] rounded-full transition"
         ></a>
         <a
           href="#contact"
-          class="dot w-3 h-3 rounded-full bg-gray-400 peer-checked:bg-green-700 transition"
+          class="dot w-3 h-3 border-2 border-[#203325] rounded-full transition"
         ></a>
       </div>
       <!-- Home section -->
       <section
         id="home"
-        class="h-screen flex items-center justify-center bg-blue-100 target:[&+div>.dot:nth-child(1)]:bg-green-700"
+        class="h-screen items-center justify-center bg-orange-50"
       >
-        Home Section
+        <div
+          class="h-full grid justify-items-center grid-cols-2 grid-rows-5 md:grid-cols-3 md:grid-rows-2 text-center"
+        >
+          <img
+            src="https://images.pexels.com/photos/21905920/pexels-photo-21905920/free-photo-of-begonia-coccinea-potted-plant.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="begonia"
+            class="z-0 absolute w-5/7 rounded-full w-4/6 self-center"
+          />
+          <img
+            src="https://images.pexels.com/photos/7190474/pexels-photo-7190474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="small flat plant"
+            class="z-10 row-span-2 aspect-square rounded-full object-cover w-4/5 self-center p-1 bg-orange-50 border-4 border-orange-50"
+          />
+          <div
+            class="flex z-10 row-span-2 col-start-1 row-start-1 self-end aspect-square rounded-full w-4/6 border-8 border-[#e4ecdf] bg-[#203325] text-white p-2 -translate-x-3 translate-y-3"
+          >
+            <div class="-translate-x-1">
+              <p>All Plants</p>
+              <p class="text-5xl font-bold">15%</p>
+              <p class="font-bold">OFF</p>
+            </div>
+          </div>
+          <img
+            src="https://images.pexels.com/photos/8790102/pexels-photo-8790102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="small tall plant"
+            class="z-10 row-span-2 row-start-4 aspect-square rounded-tl-full rounded-bl-full rounded-br-full object-cover w-4/5 self-center p-1 bg-orange-50 border-4 border-orange-50"
+          />
+          <div
+            class="z-20 absolute top-12 text-left border-t border-[#203325] text-[#203325] w-2/3 -translate-x-7 translate-y-7"
+          >
+            <div class="flex">
+              <p class="font-bold mr-3">Plant 1</p>
+              <p class="font-bold italic text-[#87aa7d] pr-10">$ 49,90</p>
+            </div>
+            <p class="text-xs pr-10">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div
+            class="z-20 row-start-4 col-start-2 col-end-2 right-0 w-2/3 text-right border-t border-[#203325] text-[#203325] translate-x-3 translate-y-16"
+          >
+            <div class="flex-col">
+              <p class="font-bold">Plant 2</p>
+              <p class="font-bold italic text-[#87aa7d]">$ 49,90</p>
+            </div>
+            <p class="text-xs pl-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div
+            class="z-20 row-start-5 col-start-2 col-end-2 left-0 text-left border-l border-[#203325] text-[#203325] h-2/3 pt-8 pl-3 -translate-x-14 translate-y-6"
+          >
+            <div class="flex">
+              <p class="font-bold pr-3">Plant 3</p>
+              <p class="font-bold italic text-[#87aa7d]">$ 49,90</p>
+            </div>
+            <p class="text-xs">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </div>
       </section>
       <!-- Plants section -->
       <section
         id="plants"
-        class="h-screen flex items-center justify-center bg-yellow-100 target:[&+div>.dot:nth-child(2)]:bg-green-700"
+        class="h-screen flex items-center justify-center bg-yellow-100"
       >
         Plants Section
       </section>
       <!-- About section -->
       <section
         id="about"
-        class="h-screen flex items-center justify-center bg-green-100 target:[&+div>.dot:nth-child(3)]:bg-green-700"
+        class="h-screen flex items-center justify-center bg-green-100"
       >
         About Section
       </section>
       <!-- Contact section -->
       <section
         id="contact"
-        class="h-screen flex items-center justify-center bg-red-100 target:[&+div>.dot:nth-child(4)]:bg-green-700"
+        class="h-screen flex items-center justify-center bg-red-100"
       >
         Contact Section
       </section>
@@ -99,8 +171,8 @@
         function updateDots() {
           let index = sections.length;
           while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
-          dots.forEach((dot) => dot.classList.remove("bg-green-700"));
-          dots[index].classList.add("bg-green-700");
+          dots.forEach((dot) => dot.classList.remove("bg-[#203325]"));
+          dots[index].classList.add("bg-[#203325]");
         }
 
         updateDots();
