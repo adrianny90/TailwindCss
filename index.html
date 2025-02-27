@@ -20,28 +20,28 @@
             <li class="self-center">
               <a
                 href="#home"
-                class="sec p-4 hover:p-4 hover:pb-4 hover:bg-[#e4ecdf] hover:shadow-md"
+                class="sec p-4 hover:p-4 hover:pb-4 "
                 >Home</a
               >
             </li>
             <li class="self-center">
               <a
                 href="#plants"
-                class="sec p-4 hover:p-4 hover:pb-4 hover:bg-[#e4ecdf] hover:shadow-md"
+                class="sec p-4 hover:p-4 hover:pb-4  "
                 >Plants</a
               >
             </li>
             <li class="self-center">
               <a
                 href="#about"
-                class="sec p-4 hover:p-4 hover:pb-4 hover:bg-[#e4ecdf] hover:shadow-md"
+                class="sec p-4 hover:p-4 hover:pb-4  "
                 >About</a
               >
             </li>
             <li class="self-center">
               <a
                 href="#contact"
-                class="sec p-4 hover:p-4 hover:pb-4 hover:bg-[#e4ecdf] hover:shadow-md"
+                class="sec p-4 hover:p-4 hover:pb-4  "
                 >Contact</a
               >
             </li>
@@ -287,7 +287,7 @@
 // updating navbar background
         function updateSec() {
           let index = sections.length;
-          while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+          while (--index && window.scrollY + 350 < sections[index].offsetTop) {}
           sec.forEach((sec) => sec.classList.remove("bg-[#e4ecdf]"));
           sec[index].classList.add("bg-[#e4ecdf]");
         }
