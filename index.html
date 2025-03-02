@@ -17,28 +17,36 @@
       <nav class="fixed top-0 w-full bg-[#87aa7d] shadow-md z-50">
         <div class="flex justify-center">
           <ul class="flex justify-center h-10 font-bold text-[#203325]">
-            <li class="self-center">
+            <li
+              class="self-center md:pr-4 lg:pr-6 xl:pr-8 md:pl-4 lg:pl-6 xl:pl-8"
+            >
               <a
                 href="#home"
                 class="sec p-4 hover:p-4 hover:pb-4 "
                 >Home</a
               >
             </li>
-            <li class="self-center">
+            <li
+              class="self-center md:pr-4 lg:pr-6 xl:pr-8 md:pl-4 lg:pl-6 xl:pl-8"
+            >
               <a
                 href="#plants"
                 class="sec p-4 hover:p-4 hover:pb-4  "
                 >Plants</a
               >
             </li>
-            <li class="self-center">
+            <li
+              class="self-center md:pr-4 lg:pr-6 xl:pr-8 md:pl-4 lg:pl-6 xl:pl-8"
+            >
               <a
                 href="#about"
                 class="sec p-4 hover:p-4 hover:pb-4  "
                 >About</a
               >
             </li>
-            <li class="self-center">
+            <li
+              class="self-center md:pr-4 lg:pr-6 xl:pr-8 md:pl-4 lg:pl-6 xl:pl-8"
+            >
               <a
                 href="#contact"
                 class="sec p-4 hover:p-4 hover:pb-4  "
@@ -72,67 +80,117 @@
       <!-- Home section -->
       <section
         id="home"
-        class="h-screen items-center justify-center bg-orange-50"
+        class="flex screen items-center justify-center align-middle bg-orange-50"
       >
-        <div
-          class="h-full grid justify-items-center grid-cols-2 grid-rows-5 md:grid-cols-3 md:grid-rows-2 text-center"
-        >
-          <img
-            src="https://images.pexels.com/photos/21905920/pexels-photo-21905920/free-photo-of-begonia-coccinea-potted-plant.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="begonia"
-            class="z-0 absolute w-5/7 rounded-full w-4/6 self-center"
-          />
-          <img
-            src="https://images.pexels.com/photos/7190474/pexels-photo-7190474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="small flat plant"
-            class="z-10 row-span-2 aspect-square rounded-full object-cover w-4/5 self-center p-1 bg-orange-50 border-4 border-orange-50"
-          />
-          <div
-            class="flex z-10 row-span-2 col-start-1 row-start-1 self-end aspect-square rounded-full w-4/6 border-8 border-[#e4ecdf] bg-[#203325] text-white p-2 -translate-x-3 translate-y-3"
-          >
-            <div class="-translate-x-1">
-              <p>All Plants</p>
-              <p class="text-5xl font-bold">15%</p>
-              <p class="font-bold">OFF</p>
+        <div class="flex justify-center p-10 h-screen">
+          <div class="grid justify-items-center grid-cols-3 grid-rows-5 h-full">
+            <img
+              src="https://images.pexels.com/photos/21905920/pexels-photo-21905920/free-photo-of-begonia-coccinea-potted-plant.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="begonia"
+              class="z-0 absolute h-[5.5%] w-[60%] sm:translate-y-[2%] sm:w-[40%] md:h-[12%] md:w-[40%] md:translate-y-[5%] lg:translate-y-[0%] lg:h-[15%] lg:w-[50%] xl:w-[30%] min-h-[270px] rounded-full self-center object-cover border-8 border-orange-50 hover:shadow-xl transition-shadow hover:cursor-pointer"
+            />
+
+            <img
+              src="https://images.pexels.com/photos/7190474/pexels-photo-7190474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="heart-s tongue fern"
+              class="z-10 row-span-2 col-start-3 aspect-square rounded-full object-cover h-[60%] sm:h-[150%] md:h-[90%] lg:h-[100%] lg:-translate-x-[20%] min-w-[150px] min-h-[150px] md:-translate-x-[30%] self-center p-1 bg-orange-50 border-4 border-orange-50 hover:shadow-xl transition-shadow hover:cursor-pointer"
+            />
+
+            <div
+              class="flex items-center justify-center z-10 aspect-square row-span-2 col-start-1 row-start-1 self-end rounded-full w-[45%] sm:w-[60%] md:w-[60%] lg:w-[60%] xl:w-[60%] min-h-[120px] min-w-[120px] border-8 border-[#e4ecdf] bg-[#203325] text-white p-2 -translate-x-3 translate-y-3 xl:translate-x-[50%] hover:shadow-xl transition-shadow hover:border-[#203325] hover:text-[#203325] hover:bg-white hover:cursor-pointer"
+            >
+              <div class="text-center">
+                <p class="md:text-2xl lg:text-3xl">All Plants</p>
+                <p class="text-5xl font-bold md:text-6xl lg:text-7xl">15%</p>
+                <p class="font-bold md:text-3xl lg:text-5xl">OFF</p>
+              </div>
             </div>
-          </div>
-          <img
-            src="https://images.pexels.com/photos/8790102/pexels-photo-8790102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            alt="small tall plant"
-            class="z-10 row-span-2 row-start-4 aspect-square rounded-tl-full rounded-bl-full rounded-br-full object-cover w-4/5 self-center p-1 bg-orange-50 border-4 border-orange-50"
-          />
-          <div
-            class="z-20 absolute top-12 text-left border-t border-[#203325] text-[#203325] w-2/3 -translate-x-7 translate-y-7"
-          >
-            <div class="flex">
-              <p class="font-bold mr-3">Plant 1</p>
-              <p class="font-bold italic text-[#87aa7d] pr-10">$ 49,90</p>
+
+            <img
+              src="https://images.pexels.com/photos/8790102/pexels-photo-8790102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="desert rose"
+              class="z-10 row-span-2 row-start-4 aspect-square rounded-tl-full rounded-bl-full rounded-br-full object-cover h-[60%] sm:h-[150%] md:h-[90%] lg:h-[100%] lg:translate-x-[20%] min-w-[150px] min-h-[150px] self-center p-1 bg-orange-50 border-4 border-orange-50 hover:shadow-xl transition-shadow hover:cursor-pointer"
+            />
+
+            <div
+              class="z-20 flex col-start-2 row-start-1 border-b border-[#203325] max-w-[400px] translate-x-[10%] -translate-y-[20%] justify-end self-center"
+            >
+              <div class="text-[#203325] self-end flex-col-reverse">
+                <p
+                  class="text-xs w-[70%] lg:w-[90%] -translate-y-[2000%] md:-translate-y-[2%] self-end"
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="flex flex-col sm:flex-row md:flex-row">
+                  <p
+                    class="font-bold pr-3 m-orange-50 sm:bg-orange-50 lg:text-2xl"
+                  >
+                    Hart's Fern
+                  </p>
+                  <p
+                    class="font-bold italic text-[#87aa7d] sm:bg-orange-50 lg:text-2xl"
+                  >
+                    $ 49,90
+                  </p>
+                </div>
+              </div>
             </div>
-            <p class="text-xs pr-10">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-          <div
-            class="z-20 row-start-4 col-start-2 col-end-2 right-0 w-2/3 text-right border-t border-[#203325] text-[#203325] translate-x-3 translate-y-16"
-          >
-            <div class="flex-col">
-              <p class="font-bold">Plant 2</p>
-              <p class="font-bold italic text-[#87aa7d]">$ 49,90</p>
+
+            <div
+              class="z-20 flex row-start-4 col-start-3 col-end-4 border-t border-[#203325] translate-x-[20%] translate-y-[40%] sm:-translate-x-[10%] lg:translate-x-[2%]"
+            >
+              <div class="text-right text-[#203325]">
+                <div
+                  class="text-right flex-col sm:flex-row md:flex justify-end"
+                >
+                  <p class="font-bold lg:text-2xl">Begonia Maculata</p>
+                  <p
+                    class="font-bold italic text-[#87aa7d] sm:pl-3 md:pl-3 lg:text-2xl"
+                  >
+                    $ 49,90
+                  </p>
+                </div>
+                <p
+                  class="text-xs md:w-[90%] -translate-y-[2000%] md:translate-y-[0%] md:translate-x-[11%] pl-10 lg:pl-20"
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
             </div>
-            <p class="text-xs pl-3">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-          </div>
-          <div
-            class="z-20 row-start-5 col-start-2 col-end-2 left-0 text-left border-l border-[#203325] text-[#203325] h-2/3 pt-8 pl-3 -translate-x-14 translate-y-6"
-          >
-            <div class="flex">
-              <p class="font-bold pr-3">Plant 3</p>
-              <p class="font-bold italic text-[#87aa7d]">$ 49,90</p>
+
+            <div
+              class="z-20 flex flex-end row-start-5 col-start-2 col-end-3 h-[50%] min-h-[85px] border-t border-[#203325] -translate-x-[0%] translate-y-[40%] sm:-translate-x-[35%] sm:translate-y-[55%] lg:translate-x-[0%] lg:translate-y-[70%]"
+            >
+              <div class="text-right text-[#203325] flex-col">
+                <div
+                  class="text-right flex-col sm:flex-row md:flex justify-end"
+                >
+                  <p class="font-bold lg:text-2xl">Desert Rose</p>
+                  <p
+                    class="font-bold italic text-[#87aa7d] sm:pl-3 md:pl-3 lg:text-2xl"
+                  >
+                    $ 49,90
+                  </p>
+                </div>
+                <p
+                  class="text-xs md:w-[90%] -translate-y-[2000%] md:translate-y-[0%] md:translate-x-[11%] pl-10"
+                >
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
             </div>
-            <p class="text-xs">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
+
+            <img
+              src="https://images.pexels.com/photos/10386013/pexels-photo-10386013.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="rubber plant"
+              class="z-10 col-start-3 aspect-square rounded-full object-cover h-[60%] lg:h-[100%] xl:h-[150%] -translate-y-[2000%] xl:translate-y-[0%] xl:translate-x-[100%] min-w-[150px] min-h-[150px] self-center p-1 bg-orange-50 border-4 border-orange-50 hover:shadow-xl transition-shadow hover:cursor-pointer"
+            />
+
+            <img
+              src="https://images.pexels.com/photos/3234638/pexels-photo-3234638.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="dwarf aloe"
+              class="z-10 col-start-1 row-start-1 aspect-square rounded-full object-cover h-[60%] lg:h-[100%] xl:h-[150%] -translate-y-[2000%] xl:translate-y-[60%] xl:-translate-x-[100%] min-w-[150px] min-h-[150px] p-1 bg-orange-50 border-4 border-orange-50 hover:shadow-xl transition-shadow hover:cursor-pointer"
+            />
           </div>
         </div>
       </section>
